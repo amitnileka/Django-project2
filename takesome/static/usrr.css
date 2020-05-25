@@ -1,0 +1,14 @@
+table,th,td
+{
+  border: 2px solid black;
+  margin: auto;
+}
+h1
+{
+  color: red;
+  background-color: yellow;
+}
+body
+{
+  background-color: grey;
+}

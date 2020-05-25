@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "usrr.css"%}">
+  </head>
+  <body>
+<h1>niklo sare</h1>
+  {% if inner %}
+    <table>
+      <thead>
+        <th>FIRST NAME</th>
+        <th>LAST NAME</th>
+        <th>EMAIL</th>
+      </thead>
+    {% for acc in inner%}
+      <tr>
+        <td>{{ acc.first_name}}</td>
+        <td>{{ acc.last_name}}</td>
+        <td>{{ acc.email}}</td>
+      </tr>
+      {% endfor %}
+
+    </table>
+    {% else %}
+      <p>No acsess record found</p>
+    {% endif %}
+
+
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/ann.css" %}">
+
+  </head>
+  <body>
+<h1>HI welcome yaaaaaaaar</h1>
+  {%if inery%}
+    <table>
+      <thead>
+        <th>NAME</th>
+        <th>DATE</th>
+        
+      </thead>
+      {% for acc in inery %}
+          <tr>
+            <td>{{acc.name}}</td>
+            <td>{{acc.date}}</td>
+          </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+      <p>No acsess record found</p>
+    {% endif %}
+  </body>
+</html>

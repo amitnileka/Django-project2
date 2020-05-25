@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+{% extends "basic.html"%}
+{%block body_block%}
+
+{% load url_extra %}
+<h1>WELCOME TO INDEX PAGE</h1>
+<h1>
+  {{ value|chota}}
+</h1>
+<h1>{{ age }}</h1>
+{% endblock %}

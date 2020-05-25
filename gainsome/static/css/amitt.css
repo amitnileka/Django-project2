@@ -1,0 +1,13 @@
+h1
+{
+  color:pink;
+  background-color: green;
+  border: 2px solid red;
+}
+
+
+table , th, td
+{
+  border: 1px solid brown;
+  margin: auto;
+}
